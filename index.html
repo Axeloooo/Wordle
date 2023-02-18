@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Wordle</title>
+</head>
+<body>
+  
+  <nav>
+    <div class="left-container"></div>
+    <div class="title-container">
+      <h1 class="menu-title">Wordle</h1>
+    </div>
+    <div class="buttons-container">
+      <button class="menu-button" id="dark-btn">&#9681;</button>
+      <button class="menu-button" id="hint-btn">&#63;</button>
+      <button class="menu-button" id="info-btn">&#9432;</button>
+    </div>
+  </nav>
+
+  <main>
+
+    <div class="game-container">
+      
+      <div class="board-container" id="board-container">
+        <table>
+          <tr>
+            <td class="tile-container"></td>
+            <td class="tile-container"></td>
+            <td class="tile-container"></td>
+            <td class="tile-container"></td>
+          </tr>
+          <tr>
+            <td class="tile-container"></td>
+            <td class="tile-container"></td>
+            <td class="tile-container"></td>
+            <td class="tile-container"></td>
+          </tr>
+          <tr>
+            <td class="tile-container"></td>
+            <td class="tile-container"></td>
+            <td class="tile-container"></td>
+            <td class="tile-container"></td>
+          </tr>
+          <tr>
+            <td class="tile-container"></td>
+            <td class="tile-container"></td>
+            <td class="tile-container"></td>
+            <td class="tile-container"></td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="congrats-container" id="congrats-container">
+        <img class="congrats-gif" src="https://condaluna.com/assets/stickers/congrats.gif">
+      </div>
+
+      <div class="hint-container" id="hint-container">
+      </div>
+
+      <div class="restart-container">
+        <button class="restart-btn" id="restart-btn">Start Over!</button>
+      </div>
+
+    </div>
+
+    <div class="info-container" id="info-container">
+      <div class="info-title">
+        <h3>How to play</h3>
+      </div>
+      <ul>
+        <li>Start typing. The letters will appear in the boxes.</li>
+        <li>Remove the letters with backspace.</li>
+        <li>Hit Enter/Return to submit and answer.</li>
+        <li>Letters with green background are in the right spot.</li>
+        <li>Letters with yellow background exist in the word. But are in the wrong spots.</li>
+        <li>Letters with gray background do not exist in the word.</li>
+        <li>If you need a hint click the &#63; icon.</li>
+      </ul>
+    </div>
+
+  </main>
+
+  <footer>
+    <div>
+      <h6>AOSP &copy 2023</h6>
+    </div>
+  </footer>
+
+  <script src="wordle.js"></script>
+
+</body>
+</html>
